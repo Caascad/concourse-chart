@@ -375,6 +375,14 @@ concourse:
       ##
       database: atc
 
+      ## Postgresl service monitor (optional, default: true)
+      ##
+      serviceMonitor:
+        enabled: true
+        interval: 30s
+        labels: {}
+        relabelings:
+
 
     kubernetes:
       ## Enable the use of Kubernetes Secrets as the credential provider for
